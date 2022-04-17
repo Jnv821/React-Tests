@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.css';
 
-export default function MyComponent(index, title, text) {
+export default function MyComponent(props) {
   return (
-    <div>
+    <div class="special">
       <h1>
-        {index} {title}
+        {props.index} - {props.title}
       </h1>
-      <p>{text}</p>
+      <p>{props.text}</p>
     </div>
   );
 }
